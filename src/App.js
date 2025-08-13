@@ -1,24 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import About from './components/About';
+import Page404 from './components/Page404';
+import Instagram from './components/Instagram';
+import Facebook from './components/Facebook';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <Router>
+   <div className="App">
+      <Header/>
+     <Routes>
+      <Route path='/'>
+      <Route index element={<Home/>} />
+      <Route path="/app" element={<Home/>} />
+      </Route>
+
+      <Route path="/About" element={<About/>} />
+      <Route path="/Contact" element={<Contact/>} >
+        <Route index element={<Instagram/>}  /> 
+        <Route path='insta' element={<Instagram/>}  />
+        <Route path='face' element={<Facebook/>}  />
+        </Route>
+      <Route path="*" element={<Page404/>} />
+     </Routes>
+
     </div>
+    </Router>
   );
 }
 

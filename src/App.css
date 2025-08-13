@@ -1,38 +1,80 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: black;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.header{
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  background-color: brown;
   color: white;
+  width: 100%;
+  padding: 1vw;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.btn1{
+padding: .5vw;
+margin: .5vw;
+align-items: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.data1{
+  margin: .5vw 7vw;
+  padding: .5vw;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  background-color: rgb(98, 188, 98);
+}
+.home{
+  width: 100%;
+}
+.home button{
+  background-color: green;
+  border-radius: 2vw;
+}
+.home button h3{
+  font-size: .9vw;
+  padding: 0vw 1.8vw;
+}
+.home button:hover{
+  background-color: brown;
+}
+.about{
+  margin-top: 2vw;
+  width: 50%;
+  display: flex;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 2vw;
+  padding: 2vw;
+}
+.insta-face{
+  display: flex;
+  align-items: center;
+  margin-top: 2vw;
+  
+}
+.insta-face h4{
+  padding: 1vw;
+  margin: 2vw;
+  background-color: red;
+  border: 2px solide green;
+  border-radius: 1vw;
+}
+.nodata{
+  margin-top: 2vw;
+}
+.nodata h4{
+  margin-bottom: 2vw;
+  font-size: 2vw;
+}
+.nodata button{
+  padding: .7vw;
+  border-radius: 2vw;
 }
