@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-routers-application/static/css/main.7166fef7.css",
+    "main.js": "/React-routers-application/static/js/main.6a49e845.js",
+    "static/js/453.0c07baab.chunk.js": "/React-routers-application/static/js/453.0c07baab.chunk.js",
+    "index.html": "/React-routers-application/index.html",
+    "main.7166fef7.css.map": "/React-routers-application/static/css/main.7166fef7.css.map",
+    "main.6a49e845.js.map": "/React-routers-application/static/js/main.6a49e845.js.map",
+    "453.0c07baab.chunk.js.map": "/React-routers-application/static/js/453.0c07baab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7166fef7.css",
+    "static/js/main.6a49e845.js"
+  ]
+}
