@@ -14,7 +14,7 @@ import {
 
 function App() {
   return (
-   <Router  basename="/React-routers-application">
+    <BrowserRouter basename="/React-routers-application">
    <div className="App">
       <Header/>
      <Routes>
@@ -33,7 +33,7 @@ function App() {
      </Routes>
 
     </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
