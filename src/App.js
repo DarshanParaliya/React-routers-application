@@ -7,14 +7,14 @@ import Page404 from './components/Page404';
 import Instagram from './components/Instagram';
 import Facebook from './components/Facebook';
 import {
-  BrowserRouter as Router,
+  BrowserRouter  as Router,
   Routes,
   Route,
 } from "react-router-dom";
 
 function App() {
   return (
-   <Router>
+   <Router  basename="/React-routers-application">
    <div className="App">
       <Header/>
      <Routes>
